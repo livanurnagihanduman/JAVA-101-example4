@@ -1,6 +1,16 @@
 import java.util.Scanner;
 public class Main {
 
+    static int UsHesapla(int x , int f){
+        int total2 = 1;
+        int p = 1;
+        while(p<=f){
+            total2 *= x;
+            p++;
+        }
+        return total2;
+    }
+
     static int topla(int y , int q){
         int sonuc = y + q;
         System.out.println("Toplam =  " + sonuc);
@@ -193,6 +203,14 @@ public class Main {
             }
         }
         System.out.println("Hoşçakalın!");
+
+
+        // ÜSLÜ HESAPLAYAN PROGRAM
+
+        System.out.println(UsHesapla(2,3));
+        System.out.println(UsHesapla(5,3));
+
+
 
 
 
