@@ -1,6 +1,9 @@
 import java.util.Scanner;
 public class Main {
 
+
+
+
     static int UsHesapla(int x , int f){
         int total2 = 1;
         int p = 1;
@@ -209,6 +212,27 @@ public class Main {
 
         System.out.println(UsHesapla(2,3));
         System.out.println(UsHesapla(5,3));
+
+        //ASAL SAYI BULAN PROGRAM
+
+       Scanner keyq = new Scanner(System.in);
+
+       int sayi;
+       System.out.print("Bir sayı giriniz: ");
+       sayi = keyq.nextInt();
+
+       int sayac = 0;
+       for(int i = 2 ; i < sayi ; i++){
+           if(sayi % i == 0){
+               sayac++;
+           }
+       }
+       if(sayac == 0){
+           System.out.println(sayi + " Asal bir sayıdır. Tebrikler!");
+       }else{
+           System.out.println(sayi + " Asal bir sayı değildir. Üzgünüz!!!");
+
+       }
 
 
 
